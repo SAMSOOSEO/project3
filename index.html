@@ -9,13 +9,36 @@
 </head>
 <body>
   <h1>Sleep Health and Lifestyle Dashboard</h1>
-  <h2>Visualized Insights from Dataset</h2>
-  <p id="dataset-size"></p>
+  <h2>
 
-  <div class="charts-container">
-    <div id="gender-chart" class="chart-box"></div>
-    <div id="sleep-disorder-chart" class="chart-box"></div>
-    <div id="age-chart" class="chart-box"></div>
-  </div>
+  
+  
+    Data Distribution : Gender, Sleep Disorder, Age
+        <p id="dataset-size"></p>
+  </h2>
+<div class="chart-box" id="combined-charts">
+  <div id="gender-chart"></div>
+  <div id="sleep-disorder-chart"></div>
+  <div id="age-chart"></div>
+</div>
+
+  <!-- Scatter Plot은 charts-container 밖으로 독립 -->
+    
+
+
+<h2>
+  Scatter Plot: Sleep Duration vs. Quality of Sleep
+</h2>
+
+<!-- Scatter Plot -->
+<div id="scatter-chart"></div>
+
+<!-- 평균값 표시 -->
+ <h2>
+<div id="scatter-averages"></div>
+</h2>
+<!-- 선택된 데이터 테이블 -->
+<div id="scatter-data-table"></div>
+
 </body>
 </html>

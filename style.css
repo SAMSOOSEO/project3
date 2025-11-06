@@ -7,12 +7,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
-  margin-top: 0.3rem;
-  margin-bottom: 2rem;
-  color: #68666b;
-  font-family: Arial, sans-serif;
-  padding-left: 1.5rem;
+  margin-top: 20px;   /* 위 여백 줄이기 */
+  margin-bottom: 5px;
+  margin-left: 50px; /* 아래 여백 줄이기 */
 }
 
 body {
@@ -38,10 +35,44 @@ body {
 }
 
 .chart-box {
-  background-color: white;
-  border-radius: 12px;
-  padding: 15px;
-  flex: 1;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+    display: flex;
+    flex-direction: column;   /* 차트와 제목을 세로로 배치 */
+    align-items: center;      /* 가로 가운데 정렬 */
+    justify-content: center;  /* 세로 가운데 정렬 */
+    padding: 10px;            /* 카드 안쪽 여백 */
+    margin: 20px;             /* 카드 사이 간격 */
+    border: 1px solid #ccc;   /* 카드 테두리 */
+    border-radius: 10px;      /* 카드 모서리 둥글게 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 카드 그림자 */
+    background-color: #fff;   /* 카드 배경색 */
 }
+#scatter-chart {
+    margin-top: 80px;  /* 위쪽 여백 */
+}
+
+
+#combined-charts {
+  display: flex;
+  flex-direction: row;        /* 가로로 나란히 */
+  justify-content: space-around;  /* 차트 간격 */
+  align-items: flex-start;        /* 위쪽 정렬 */
+  gap: 20px;                      /* 차트 사이 간격 */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+
+#scatter-card {
+  width: 100%;              /* 카드 전체 폭 사용 */
+  padding: 20px;
+  
+}
+
+#scatter-chart + h2,
+h2 + #scatter-chart {
+  margin-top: 20px; /* h2 밑의 간격 */
+}
+
