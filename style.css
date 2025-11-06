@@ -1,0 +1,47 @@
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding-left: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+  color: #68666b;
+  font-family: Arial, sans-serif;
+  padding-left: 1.5rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+  background-color: #f8f8f8;
+}
+
+#dataset-size {
+  font-weight: bold;
+  margin-left: 1.5rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.chart-box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  flex: 1;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
